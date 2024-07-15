@@ -49,8 +49,26 @@ body {
     background-color: #1E2D69;
     width: 350px;
     height: 201px;
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-top: 40px;
+    padding-left: 41px;
+    border-radius:10px 120px 10px 10px;
+
+    &--position2 > img {
+        background-color: #0c122c;
+        padding: 10px;
+        border-radius: 10px;
+        width: 48px;
+        height: 48px;
+    }
 }
 
+.card__fylo--position2{
+    display: flex;
+    gap: 16px;
+}
 
 .card__rectangle {
     width: 540px;
