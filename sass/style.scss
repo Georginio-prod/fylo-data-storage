@@ -1,32 +1,60 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:275,200,400,500,600");
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-
 body {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0C122C;
-    font-family: "Raleway" "sans-serif";
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c122c;
+  font-family: "Raleway" "sans-serif";
 }
 
 .container {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
-.background__image{
-    height: 420px;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    bottom: 0;
-    position: absolute;
+.background__image {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 920px;
+  height: 201px;
+  margin-bottom: 2%;
+  gap: 30px;
+}
+
+.card__fylo {
+    background-color: #1E2D69;
+    width: 350px;
+    height: 201px;
+}
+
+
+.card__rectangle {
+    width: 540px;
+    height: 154px;
+    background-color: #1E2D69;
+    align-self: flex-end;
 }
