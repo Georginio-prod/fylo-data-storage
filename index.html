@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/style.scss">
-    <link rel="shortcut icon" href="./public/favicon-32x32.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/style.scss" />
+    <link
+      rel="shortcut icon"
+      href="./public/favicon-32x32.png"
+      type="image/x-icon"
+    />
     <title>fylo-data-storage</title>
-    
+  </head>
 
-</head>
+  <body>
+    <div class="container">
+      <img
+        src="./public/bg-desktop.png"
+        alt="background"
+        class="background__image"
+      />
 
-<body>
-   
-</body>
+      <div class="card">
+        <div class="card__fylo">
+          <div class="card__fylo--position1">
+            <img src="./public/logo.svg" alt="logo" />
+          </div>
 
+          <div class="card__fylo--position2">
+            <img src="./public/icon-document.svg" alt="document" />
+            <img src="./public/icon-folder.svg" alt="dossier" />
+            <img src="./public/icon-upload.svg" alt="upload" />
+          </div>
+        </div>
+
+        <div class="card__rectangle">
+          <div class="card__rectangle--number">
+            <p>185 <span class="size">GB LEFT</span></p>
+          </div>
+          <div class="card__rectangle--texte">
+            You’ve used <span class="color">815 GB</span> of your storage
+          </div>
+          <progress
+            value="75"
+            max="100"
+            class="card__rectangle--progress"
+          ></progress>
+          <div class="card__rectangle--storage">
+            <div>0 GB</div>
+            <div>1000 GB</div>
+          </div>
+          <img src="./public/Oval.png" alt="cercle" class="progress--marker">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
