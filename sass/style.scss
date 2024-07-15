@@ -105,17 +105,33 @@ body {
     height: 20px;
     -webkit-appearance: none;
     appearance: none;
+    
   }
+
+
 
   &--progress::-webkit-progress-bar {
     background-color: #151e48;
     border-radius: 20px;
     border: solid #151e48;
+   
   }
 
   &--progress::-webkit-progress-value {
     background: linear-gradient(#fd9d97, #fb5295);
     border-radius: 20px;
+    
+  }
+
+  &--progress--marker {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    
   }
 
   &--number {
@@ -144,6 +160,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 }
@@ -153,4 +170,14 @@ body {
     opacity: 50%;
     font-weight: 700;
     
+}
+
+.progress--marker {
+    position: relative;
+    right: 0;
+    top: -38%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 66%;
 }
