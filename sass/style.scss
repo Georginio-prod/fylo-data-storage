@@ -1,5 +1,7 @@
+/* Importation des polices */
 @import url("https://fonts.googleapis.com/css?family=Raleway:275,200,400,500,600");
 
+/* Style général */
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -13,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #0c122c;
-  font-family: "Raleway" "sans-serif";
+  font-family: "Raleway", "sans-serif";
 }
 
 .container {
@@ -54,19 +56,19 @@ body {
   padding-top: 40px;
   padding-left: 41px;
   border-radius: 10px 120px 10px 10px;
-
-  &--position2 > img {
-    background-color: #0c122c;
-    padding: 10px;
-    border-radius: 10px;
-    width: 48px;
-    height: 48px;
-  }
 }
 
 .card__fylo--position2 {
   display: flex;
   gap: 16px;
+}
+
+.card__fylo--position2 > img {
+  background-color: #0c122c;
+  padding: 10px;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
 }
 
 .card__rectangle {
@@ -78,106 +80,179 @@ body {
   padding-top: 40px;
   color: white;
   border-radius: 10px;
-
-  &--texte {
-    color: #DBD9FF;
-    padding-bottom:16px ;
-    font-size: 14px;
-  }
-
-  &--texte > span {
-    color: white;
-
-  }
-
-  &--storage {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin-top: 8px;
-    font-size: 12px;
-    color: #DBD9FF;
-    font-weight: 700;
-  }
-
-  &--progress {
-    width: 459px;
-    height: 20px;
-    -webkit-appearance: none;
-    appearance: none;
-    
-  }
-
-
-
-  &--progress::-webkit-progress-bar {
-    background-color: #151e48;
-    border-radius: 20px;
-    border: solid #151e48;
-   
-  }
-
-  &--progress::-webkit-progress-value {
-    background: linear-gradient(#fd9d97, #fb5295);
-    border-radius: 20px;
-    
-  }
-
-  &--progress--marker {
-    position: absolute;
-    right: 0;
-    top: -5px;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    
-  }
-
-  &--number {
-    position: absolute;
-    top: 35%;
-    left: calc(66% ); /* 80% de la largeur du progress moins la marge */
-    width: 179px;
-    height: 94px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 89% 85%, 0% 85%);
-    display: flex;
-    flex-direction: row;
-    gap: 9px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px 10px 0 10px ;
-    color:#0C122C ;
-    background-color: white;
 }
 
-&--number > p {
-    font-size: 40px;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.card__rectangle--texte {
+  color: #DBD9FF;
+  padding-bottom: 16px;
+  font-size: 14px;
 }
 
+.card__rectangle--texte > span {
+  color: white;
+}
+
+.card__rectangle--storage {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #DBD9FF;
+  font-weight: 700;
+}
+
+.card__rectangle--progress {
+  width: 459px;
+  height: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.card__rectangle--progress::-webkit-progress-bar {
+  background-color: #151e48;
+  border-radius: 20px;
+  border: solid #151e48;
+}
+
+.card__rectangle--progress::-webkit-progress-value {
+  background: linear-gradient(#fd9d97, #fb5295);
+  border-radius: 20px;
+}
+
+.card__rectangle--progress--marker {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.card__rectangle--number {
+  position: absolute;
+  top: 35%;
+  left: calc(66%);
+  width: 179px;
+  height: 94px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 89% 85%, 0% 85%);
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0 10px;
+  color: #0C122C;
+  background-color: white;
+}
+
+.card__rectangle--number > p {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .size {
-    font-size: 12px;
-    opacity: 50%;
-    font-weight: 700;
-    
+  font-size: 12px;
+  opacity: 50%;
+  font-weight: 700;
 }
 
 .progress--marker {
-    position: relative;
-    right: 0;
-    top: -38%;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    left: 66%;
+  position: relative;
+  right: 0;
+  top: -38%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 66%;
+}
+
+/* Media Queries pour les écrans de 375px et 667px */
+@media (max-width: 375px) {
+  .card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .card__fylo {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .card__rectangle {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .card__rectangle--progress {
+    width: 100%;
+  }
+
+  .card__rectangle--number {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    font-size: 24px;
+  }
+
+  .card__rectangle--number > p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 667px) {
+  .card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card__fylo {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .card__rectangle {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .card__rectangle--progress {
+    width: 100%;
+  }
+
+  .card__rectangle--number {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 80px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    font-size: 28px;
+  }
+
+  .card__rectangle--number > p {
+    font-size: 28px;
+  }
 }
