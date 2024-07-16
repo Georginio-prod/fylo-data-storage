@@ -6,7 +6,7 @@ le défi consiste à créer ce composant de stockage de données.
 
 ## Aperçu
 
-![Aperçu du projet](./public/preview.png)
+![Aperçu du projet](./../web8/public/desktop-design.jpg)
 
 ## Technologies utilisées
 
