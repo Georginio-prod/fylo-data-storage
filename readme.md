@@ -37,10 +37,14 @@ Huddle-landing-page/
 
 Ce fichier README fournit une vue d'ensemble complète du projet, incluant la description, les technologies utilisées, les instructions d'installation et d'utilisation, ainsi que des liens vers les ressources et la démo en ligne.
 
-# link
+
 
 # github link:
 
-`https://github.com/Georginio-prod/fylo-data-storage`
+https://github.com/Georginio-prod/fylo-data-storage
 
 # vercel link:
+https://fylo-data-storage-self.vercel.app/
+
+# frontend mentor 
+https://www.frontendmentor.io/solutions/fylo-data-storage-FrzcsO_mQU
