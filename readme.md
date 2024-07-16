@@ -44,3 +44,4 @@ Ce fichier README fournit une vue d'ensemble complète du projet, incluant la de
 `https://github.com/Georginio-prod/fylo-data-storage`
 
 # vercel link:
+`https://fylo-data-storage-self.vercel.app/`
